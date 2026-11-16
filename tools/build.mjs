@@ -12,5 +12,7 @@ const fonts = '<link rel="stylesheet" href="https://fonts.googleapis.com/css2?fa
 mkdirSync('dist', { recursive: true });
 const inner = `<title>Crude Empire</title>\n<meta name="claude:viewport-fit-sides" content="cover">\n${fonts}\n<style>${css}</style>\n${body}\n<script>${js}</script>\n`;
 writeFileSync('dist/artifact.html', inner);
-writeFileSync('dist/crude-empire.html', `<!doctype html>\n<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no"></head><body>\n${inner}</body></html>\n`);
+const page = `<!doctype html>\n<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no"></head><body>\n${inner}</body></html>\n`;
+writeFileSync('dist/crude-empire.html', page);
+writeFileSync('dist/index.html', page); // Netlify entry point
 console.log('built dist/ (' + (inner.length / 1024 | 0) + ' KB)');
