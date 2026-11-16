@@ -1,0 +1,13 @@
+{
+  "name": "crude-empire",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Crude Empire: a 3D oil & gas tycoon strategy game",
+  "scripts": {
+    "start": "python3 -m http.server 8080",
+    "build": "node tools/build.mjs",
+    "test": "node tools/simtest.mjs"
+  },
+  "devDependencies": { "esbuild": "^0.25.0", "three": "^0.187.0" }
+}
