@@ -351,7 +351,7 @@ function decisionDialog() {
 }
 export function helpDialog(first) {
   let saved = null; try { saved = localStorage.getItem(SAVE_KEY); } catch (e) { /* no storage */ }
-  modal(`<h1>Crude Empire</h1><p class="lead">Find it. Drill it. Refine it. Sell it at the top.</p>
+  modal(`<h1>Oil Tycoon</h1><p class="lead">Find it. Drill it. Refine it. Sell it at the top.</p>
     <ol class="how">
       <li><b>Survey</b> to paint a seismic heat-map. Red means a strong signal. Cheap surveys are noisy and sometimes wrong.</li>
       <li><b>Drill</b> an exploration well and choose a depth. Watch the drill log for gas shows, then complete, deepen or abandon.</li>

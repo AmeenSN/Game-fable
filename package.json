@@ -1,9 +1,9 @@
 {
-  "name": "crude-empire",
+  "name": "oil-tycoon",
   "version": "1.0.0",
   "private": true,
   "type": "module",
-  "description": "Crude Empire: a 3D oil & gas tycoon strategy game",
+  "description": "Oil Tycoon: a 3D oil & gas tycoon strategy game",
   "scripts": {
     "start": "python3 -m http.server 8080",
     "build": "node tools/build.mjs",

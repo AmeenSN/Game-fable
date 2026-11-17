@@ -1,4 +1,4 @@
-<title>Crude Empire</title>
+<title>Oil Tycoon</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&family=Barlow+Condensed:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
 <style>/* Layout: full-bleed 3D map; control-room chrome floats on top (top bar, left tools, right panel, bottom-left inspector). */
@@ -4463,7 +4463,7 @@ void main() {
     ${n.deeper?' <b class="hintc">The last cuttings carried hydrocarbon shows. Something may lie deeper.</b>':n.tier<2?" No shows in the last cuttings.":""}</p>
     ${Rc(t,i,n.tier)}
     ${s&&s.type==="gas"&&!t.buildings.some(r=>r.type==="gasplant")?'<div class="warn">A gas well needs a Gas Plant before it can flow.</div>':""}
-    <div class="acts">${Zp(t,n)}${Ye("Decide later","close")}</div>`,{cls:e?"strike":""})}function pv(){let n=te.s.pending;Or(`<h2>${on(n.title)}</h2><p>${on(n.text)}</p><div class="choices">${n.options.map((e,t)=>`<button class="card" data-a="decide" data-i="${t}"><div><b>${on(e.l)}</b><p>${on(e.h)}</p></div></button>`).join("")}</div>`,{sticky:!0})}function Za(n){let e=null;try{e=localStorage.getItem(kr)}catch{}Or(`<h1>Crude Empire</h1><p class="lead">Find it. Drill it. Refine it. Sell it at the top.</p>
+    <div class="acts">${Zp(t,n)}${Ye("Decide later","close")}</div>`,{cls:e?"strike":""})}function pv(){let n=te.s.pending;Or(`<h2>${on(n.title)}</h2><p>${on(n.text)}</p><div class="choices">${n.options.map((e,t)=>`<button class="card" data-a="decide" data-i="${t}"><div><b>${on(e.l)}</b><p>${on(e.h)}</p></div></button>`).join("")}</div>`,{sticky:!0})}function Za(n){let e=null;try{e=localStorage.getItem(kr)}catch{}Or(`<h1>Oil Tycoon</h1><p class="lead">Find it. Drill it. Refine it. Sell it at the top.</p>
     <ol class="how">
       <li><b>Survey</b> to paint a seismic heat-map. Red means a strong signal. Cheap surveys are noisy and sometimes wrong.</li>
       <li><b>Drill</b> an exploration well and choose a depth. Watch the drill log for gas shows, then complete, deepen or abandon.</li>

@@ -1,10 +1,10 @@
-# Crude Empire
+# Oil Tycoon
 
 A 3D oil and gas tycoon. Start as a wildcatter with $10M and a rumoured oil seep; survey, drill, produce, refine and trade your way to a $500M company without going bust.
 
 ## Play
 
-- **Quickest:** open `dist/crude-empire.html` in a browser. It is one self-contained file.
+- **Quickest:** open `dist/oil-tycoon.html` in a browser. It is one self-contained file.
 - **From source:** `npm start`, then visit http://localhost:8080 (ES modules need a web server).
 
 Controls: drag to pan, right-drag (or two fingers) to rotate, wheel or pinch to zoom.
